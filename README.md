@@ -16,4 +16,6 @@ Estos son los requisitos a completar de tu página asignada:
 
 ## Requerimiento 4: Mejor diseño web
 
+Lo primero que se hará es mejorar el diseño web, empezando por el home.
+
 ## Requerimiento 5: Sección para agregar Aliados

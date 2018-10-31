@@ -1,8 +1,6 @@
-Estos son los requisitos a completar de tu página asignada:
+Se incluyeron las instrucciones en el archivo README.md, allí se mostrará en líneas generales 
+qué se avanzó en los requerimientos de la página. En este documento se documentará qué cambios
+se realizaron según se recibió el proyecto del compañero.
 
-1. Debe crear un efecto de cubo 3d para las imágenes 
-2. Debe tener un formulario de contacto que valide que el usuario debe completar los campos
-3. Crear un menú desplegable
-4. Mejorar el diseño web
-5. Agregar campos de entrada (inputs) que permitan al usuario agregar el nombre de cada nuevo usuario. 
-Una vez estos se envíen deben mostrarse en nuestro documento HTML con un buen diseño CSS
+Lo primero es que ese usó la etiqueta <center> y esto no es una buena práctica, el estilo debe
+ir en el CSS.
