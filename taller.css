@@ -1,7 +1,8 @@
 
 /* 3.3. Se  crean los estilos para el menú*/
 .contenido-menu {
-    font-family: 'Oswald', sans-serif; 
+    max-height: 0;
+    overflow: hidden;
     padding: 0 0 0 50px;
 }
 .menu-desplegable {
@@ -13,6 +14,7 @@
 .menu-desplegable ul {
     list-style-type: none;
     padding: 0;
+    font-family: 'Muli';
 }
 .menu-desplegable a {
     display:block;
@@ -31,4 +33,16 @@
 }
 input#menu {
     display: none;
+}
+
+/* 3.5 Cuando se despliegue se permite que cierre el menú */
+input:checked +label {
+    background-image: url(assets/close.png);
+}
+/* 3.5 Efecto para desaparecer */
+input:checked ~ label {
+    background-image: url(assets/close.png);
+}
+input:checked ~ .contenido-menu {
+    max-height: 100%;
 }

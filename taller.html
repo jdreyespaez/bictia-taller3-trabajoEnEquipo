@@ -12,7 +12,7 @@
 </head>
 <body>
     <!-- Requerimiento 3: Menú desplegable -->
-        <!-- 3.1 Se crea un div que contendrá los elementos del menú-->   
+        <!-- 3.1. Se crea un div que contendrá los elementos del menú-->   
             <div class="menu-desplegable">
                 <!-- 3.2. Se crea una checkbox para que se despliegue el menú -->
                 <input type="checkbox" id="menu">
@@ -28,30 +28,113 @@
                     </div>
             </div>
                 
-       <!--  titulo1 -->
-      <h1>  Fundacion trabajando por amor</h1>
+    <!--  titulo1 -->
+    <h1>  Fundacion trabajando por amor</h1>
     <div class="div1">
-    
-    <h2>¿Quienes somos?</h2> 
-            <!-- imagenes mostradas en la pagina principal -->
+        <h2>¿Quienes somos?</h2> 
+        <!-- imagenes mostradas en la pagina principal -->
         <img src="img/275px-Lascar_Museo_Botero_(4587575468).jpg" alt="image">
         <img src="img/409876_142621_1.jpg" alt="image">
         <img src="img/44595052_1712892385489220_6240692295469891584_n.png" alt="image">
     </div>
+
     <div class="div2">
-    <h2>galeria</h2>
+        <h2>galeria</h2>
         <img src="img/arbolizadoraalta.png" alt="image">
         <img src="img/Barrio-La-Candelaria-800x563.jpg" alt="image">
         <img src="img/bibliotecavirgiliovarco.png" alt="image">
     </div>
+
     <div class="div3">
-<h2>lo que tu puedes hacer</h2>
-<img src="img/bogota-museo-botero-escaleras-patio-y-corredores-640x400.jpg" alt="image">
-<img src="img/bogota-panoramica.jpg" alt="image">
-<img src="img/bogota.png" alt="image">
+        <h2>lo que tu puedes hacer</h2>
+        <img src="img/bogota-museo-botero-escaleras-patio-y-corredores-640x400.jpg" alt="image">
+        <img src="img/bogota-panoramica.jpg" alt="image">
+        <img src="img/bogota.png" alt="image">
     </div>
+
+    <!-- Requerimiento 2: Formulario de contacto -->
+    <div class="contacto">
+        <form name="formulario" method="GET">
+            <!-- 2.2. Se incluyen los campos a enviar, con sus respectivas funciones de validación-->
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre"/>
+            <br><br>
+
+            <input type="text" name="apellido" id="apellido" placeholder="Apellido"/>
+            <br><br>
+
+            <input type="email" name="correo" id="correo" placeholder="Correo electrónico"/>
+            <br><br>
+    
+            <input type="radio" name="personeria" id="personeria" value="Persona"/> Persona Natural
+            <input type="radio" name="personeria" id="personeria" value="Empresa"/> Empresa
+            <br><br>
+    
+            <input type="checkbox" name="terminos" id="terminos"/> Acepto el tratamiento que se hará a mi información
+            <br><br>
+    
+            <input type="submit" name="boton" id="boton" value="Enviar tus datos a Pepe"/>
+        </form>
+    </div>
+
    <script>
-  
+    
+    // Requerimiento 2: Formulario de contacto, aquí se valida
+    (function(){
+        // 2.1. Se toman los elementos a manipular en JS
+        var formulario = document.getElementsByName("formulario")[0];
+        var elementos = formulario.elements;
+        var boton = document.getElementById("boton");
+
+        // 2.2. Se incluyen los campos a enviar, con sus respectivas funciones de validación
+        function validarNombre(e){
+            if(formulario.nombre.value == 0){
+                alert("Debes completar el campo Nombre, antes de enviar tus datos a Pepe.");
+                e.preventDefault();
+            }
+        }
+
+        function validarApellido(e){
+            if(formulario.apellido.value == 0){
+                alert("Debes completar el campo Apellido, antes de enviar tus datos a Pepe.");
+                e.preventDefault();
+            }
+        }
+
+        function validarCorreo(e){
+            if(formulario.correo.value == 0){
+                alert("Debes completar el campo Correo, antes de enviar tus datos a Pepe.");
+                e.preventDefault();
+            }
+        }
+
+        function validarRadio(e){
+            if(formulario.personeria[0].checked == true || formulario.personeria[1].checked == true){
+            } else {
+                alert("Debes decirnos si eres una Persona o Empresa, Pepe quiere saberlo.");
+                e.preventDefault();
+            }
+        }
+
+        function validarTerminos(e){
+            if(formulario.terminos.checked == false){
+                alert("Debe aceptar los términos con que Pepe tratará tu información");
+                e.preventDefault();
+            }
+        }
+
+        // 2.3. Se valida que no se hayan enviado vacío ninguno de los campos
+        var validar = function(e){
+            validarNombre(e);
+            validarApellido(e);
+            validarCorreo(e);
+            validarRadio(e);
+            validarTerminos(e);
+        };
+
+        formulario.addEventListener("submit", validar);
+
+    }())
+
    </script>
                  
 </body>
