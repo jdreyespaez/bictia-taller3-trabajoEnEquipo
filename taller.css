@@ -20,3 +20,15 @@
     text-decoration: none;
 }
 
+/* 3.4 Se agrega un ícono de menú y se estila */
+.menu-desplegable label {
+    font-family: 'Muli';
+    font-size: 16px;
+    display: block;
+    cursor: pointer;
+    background: url(assets/menu.png) no-repeat left center;
+    padding: 10px 0 10px 50px;
+}
+input#menu {
+    display: none;
+}

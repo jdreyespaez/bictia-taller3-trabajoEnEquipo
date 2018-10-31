@@ -18,7 +18,8 @@ Para navegar mejor el código, usar esta sección como una hoja de ruta y referi
 Dado que el requerimiento 4 implica mejoras en diseño web, incluir un menú desplegable hará mejor la experiencia de usuario. Así fue el proceso:
 3.1 Se creó un div con las otras secciones que tendrá la página.
 3.2 Mediante un checkbox se despliegan los contenidos del div.
-3.3 Se  crean los estilos para el menú 
+3.3 Se  crean los estilos para el menú.
+3.4 Se agrega un ícono de menú y se estila. 
 
 ## Requerimiento 4: Mejor diseño web
 
