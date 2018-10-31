@@ -15,6 +15,7 @@ Estos son los requisitos a completar de tu página asignada:
 ## Requerimiento 3: Menú desplegable
 Dado que el requerimiento 4 implica mejoras en diseño web, incluir un menú desplegable hará mejor la experiencia de usuario. Así fue el proceso:
 * Se creó un div con las otras secciones que tendrá la página.
+* Mediante un checkbox se despliegan los contenidos del div.
 
 ## Requerimiento 4: Mejor diseño web
 
