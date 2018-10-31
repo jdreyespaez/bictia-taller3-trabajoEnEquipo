@@ -8,14 +8,17 @@ Estos son los requisitos a completar de tu página asignada:
 4. Mejorar el diseño web
 5. Agregar campos de entrada (inputs) que permitan al usuario agregar el nombre de cada nuevo usuario. Una vez estos se envíen deben mostrarse en nuestro documento HTML con un buen diseño CSS
 
+Para navegar mejor el código, usar esta sección como una hoja de ruta y referirse a cada uno de los requrimientos y su lista numerada.
+
 ## Requerimiento 1: Imágenes con efecto 3D
 
 ## Requerimiento 2: Formulario de contacto
 
 ## Requerimiento 3: Menú desplegable
 Dado que el requerimiento 4 implica mejoras en diseño web, incluir un menú desplegable hará mejor la experiencia de usuario. Así fue el proceso:
-* Se creó un div con las otras secciones que tendrá la página.
-* Mediante un checkbox se despliegan los contenidos del div.
+3.1 Se creó un div con las otras secciones que tendrá la página.
+3.2 Mediante un checkbox se despliegan los contenidos del div.
+3.3 Se  crean los estilos para el menú 
 
 ## Requerimiento 4: Mejor diseño web
 
