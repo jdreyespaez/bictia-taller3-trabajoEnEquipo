@@ -1,76 +1,21 @@
-*{
-    margin: 3vh;
-    font-family: Arial, Helvetica, sans-serif;
-}
-body{
-    background-color: black;
-}
-h1{
-    color: white;
-    position: relative;
-    bottom: 20vh;
-}
-img{
-    width: 50vh;
-    height: 50vh;
-}
-.div1{
-    background-color: blue;
-    width: 60vh;
-    height: 200vh;
-}
-.div2{
-    background-color: blueviolet;
-    width: 60vh;
-    height: 200vh;
-    position: relative;
-    left: 62vh;
-    bottom: 203vh;
-}
-.div3{
-    background-color: brown;
-    width: 60vh;
-    height: 200vh;
-    position: relative;
-    left: 124vh;
-    bottom: 406vh;
-}
-h2{
-color: white;
-}
 
-header{
-    width: 70%;
-    font-family: Arial, Helvetica, sans-serif;
-    position: relative;
-    top: 35vh;
-    right: 30vh;
+/* 3.3. Se  crean los estilos para el menú*/
+.contenido-menu {
+    font-family: 'Oswald', sans-serif; 
+    padding: 0 0 0 50px;
 }
-.w{
-    position: relative;
-  left: 60vh;
-  bottom: 20vh;
+.menu-desplegable {
+    background-color: rgb(255, 255, 255);
+    padding: 0px 30px;
+    border-bottom: 3px solid #CDE700;
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.2);
 }
-.w ul {
-    display: flex;
+.menu-desplegable ul {
+    list-style-type: none;
     padding: 0;
-    margin: 0;
-    list-style: none;
 }
-.w a {
-    display: block;
-    padding: 2em;
-    background-color: black;
+.menu-desplegable a {
+    display:block;
+    padding: 10px;
     text-decoration: none;
-    color: bisque;
-}
-.w a:hover {
-    background-color: white;
-   color: black;
-}
-.w>ul> li> ul {
-    display: none;
-}
-.w> ul> li>a:hover + ul, .w> ul> li>ul:hover {
-    display: block;
 }
