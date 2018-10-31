@@ -1,0 +1,76 @@
+*{
+    margin: 3vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: black;
+}
+h1{
+    color: white;
+    position: relative;
+    bottom: 20vh;
+}
+img{
+    width: 50vh;
+    height: 50vh;
+}
+.div1{
+    background-color: blue;
+    width: 60vh;
+    height: 200vh;
+}
+.div2{
+    background-color: blueviolet;
+    width: 60vh;
+    height: 200vh;
+    position: relative;
+    left: 62vh;
+    bottom: 203vh;
+}
+.div3{
+    background-color: brown;
+    width: 60vh;
+    height: 200vh;
+    position: relative;
+    left: 124vh;
+    bottom: 406vh;
+}
+h2{
+color: white;
+}
+
+header{
+    width: 70%;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    top: 35vh;
+    right: 30vh;
+}
+.w{
+    position: relative;
+  left: 60vh;
+  bottom: 20vh;
+}
+.w ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.w a {
+    display: block;
+    padding: 2em;
+    background-color: black;
+    text-decoration: none;
+    color: bisque;
+}
+.w a:hover {
+    background-color: white;
+   color: black;
+}
+.w>ul> li> ul {
+    display: none;
+}
+.w> ul> li>a:hover + ul, .w> ul> li>ul:hover {
+    display: block;
+}
