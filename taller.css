@@ -1,3 +1,150 @@
+/* 4.1. La primera imagen que ve el usuario es alusiva a la fundación */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.portada {
+    width: 100%;
+    height: 100vh;
+    background: url(bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: table;
+    display: flex;
+}
+
+.header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header h1 {
+    font-family: 'Muli';
+    text-align: center;
+    color: #fff;
+}
+
+.header p {
+    font-family: 'Muli';
+    text-align: center;
+    color: #fff;
+}
+
+/* 4.2. También se mejorarán las secciones principales */
+.div1 {
+    width: 100%;
+    height: 30vh;
+    background: url(bg2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+.header-qs {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+.header-qs h2 {
+    font-family: 'Muli';
+    text-align: center;
+    color: #9791dd;
+    margin-top: 33%;
+    margin-bottom: 33%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.header-qs p {
+    font-family: 'Saira Extra Condensed';
+    text-align: center;
+    color: #9791dd;
+    background-color: #fff;
+    border-radius: 10px;
+    display: inline;
+}
+
+.div2 {
+    width: 100%;
+    height: 20vh;
+    background: url(bg3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+.header-g {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+.header-g h2 {
+    font-family: 'Muli';
+    text-align: center;
+    color: #9791dd;
+    margin-top: 33%;
+}
+
+/* 1.1. Se crearán unas tarjetas que contendrán las imágenes de la galería */
+.tarjeta {
+    position: relative;
+    /* top: 50%;
+    left: 50%; */
+    transform: translate(-50%; -50%);
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    perspective: 600px;
+    transition: 1s;
+}
+
+/* 1.2. La tarjeta tendrá un frente y un reverso que mostrará el efecto 3D */
+.tarjeta .frente {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    background: #fff;
+    backface-visibility: hidden;
+    transform: rotateX(0deg);
+    transition: 1s;
+}
+/* 3.3. Al hacer hover se crea la rotación de la tarjeta. */
+.tarjeta:hover .frente {
+    transform: rotateX(-180deg);
+}
+
+.tarjeta .reverso {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #9791dd;
+    backface-visibility: hidden;
+    transform: rotateX(180deg);
+    transition: 1s;
+}
+/* 3.3. Al hacer hover se crea la rotación de la tarjeta. */
+.tarjeta:hover .reverso {
+    transform: rotateX(0deg);
+}
+
 
 /* 3.3. Se  crean los estilos para el menú*/
 .contenido-menu {
@@ -45,4 +192,16 @@ input:checked ~ label {
 }
 input:checked ~ .contenido-menu {
     max-height: 100%;
+}
+
+/* 5.3. El estilo que se le aplicará a la sección que contendrá al nuevo aliado */
+section {
+    width: 150px;
+    height: 300px;
+    background: #dddddd;
+    display: block;
+    float: left;
+    margin-right: 10px;
+    margin-top: 10px;
+    border: 1px solid #aaaaaa;
 }

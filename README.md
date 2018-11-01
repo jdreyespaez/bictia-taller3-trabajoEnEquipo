@@ -11,6 +11,10 @@ Estos son los requisitos a completar de tu página asignada:
 Para navegar mejor el código, usar esta sección como una hoja de ruta y referirse a cada uno de los requrimientos y su lista numerada. Por ejemplo, el paso "3.3 Se  crean los estilos para el menú", está en el Requerimiento 3 - Numeral 3. 
 
 ## Requerimiento 1: Imágenes con efecto 3D
+La forma de visualizar el efecto 3D será a través de la sección Galería.
+1. Se crearán unas tarjetas que contendrán las imágenes de la galería.
+2. La tarjeta tendrá un frente y un reverso que mostrará el efecto 3D.
+3. Al hacer hover se crea la rotación de la tarjeta.
 
 ## Requerimiento 2: Formulario de contacto
 Para validar los datos del formulario se siguió el siguiente proceso:
@@ -29,7 +33,13 @@ Dado que el requerimiento 4 implica mejoras en diseño web, incluir un menú des
 5. Cuando se despliegue se permite que cierre el menú y desparezca.
 
 ## Requerimiento 4: Mejor diseño web
-
 Lo primero que se hará es mejorar el diseño web, empezando por el home.
+1. La primera imagen que ve el usuario es alusiva a la fundación.
+2. También se mejoraron las secciones principales.
 
 ## Requerimiento 5: Sección para agregar Aliados
+En esta sección se crearán nuevos divs donde están insertados los datos de las empresas que quieres ser aliadas de la fundación. Así fue el proceso:
+1. Se crean los inputs a agregar como aliado.
+2. Se crea el espacio donde se incluirán los aliados y la función en JS que los agregará.
+3. El estilo que se le aplicará a la sección que contendrá al nuevo aliado.
+4. Se crea el formulario que ubicará los datos en sección de Aliados.
