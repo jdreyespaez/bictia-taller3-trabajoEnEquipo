@@ -41,3 +41,4 @@ Lo primero que se hará es mejorar el diseño web, empezando por el home.
 En esta sección se crearán nuevos divs donde están insertados los datos de las empresas que quieres ser aliadas de la fundación. Así fue el proceso:
 1. Se crean los inputs a agregar como aliado.
 2. Seleccionar el formulario por su id="formularioAliados".
+3. Prevenir que envíe el nombre del aliado vacío

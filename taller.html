@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
 
-    <script type="text/javascript" src="scripts.js"></script>
+    <!-- <script type="text/javascript" src="scripts.js"></script> -->
 
 </head>
 <body>
@@ -112,6 +112,11 @@
             <button>Agregar Aliado</button>
         </form>
         
+        <section id="contenedorAliados">
+            <h2>Nuestros Aliados</h2>
+            <span></span>
+        </section>
+
     </div>
 
         
@@ -121,31 +126,29 @@
     // Requerimiento 5: Agregar aliados
     // 5.2. Seleccionar el formulario por su id="formularioAliados"
     var agregarAliado = document.forms["formularioAliados"];
+    var contenedorAliados = document.querySelector('#contenedorAliados');
+
+    agregarAliado.addEventListener('submit', function(e) {
+        // 5.3. Prevenir que envíe el nombre del aliado vacío
+        e.preventDefault();
+        
+        var value = agregarAliado.querySelector('input[name="nombreEmpresa"]').value;
+        console.log(value);
+        
+        // Se crean los elementos
+        var spanAliado = document.createElement('span');
+        var nombreEmpresa = document.createElement('h3');
+
+        // Agregarlo al documento y el contenido en el lugar adecuado
+        nombreEmpresa.textContent = value;
+        spanAliado.appendChild(nombreEmpresa);
+        contenedorAliados.appendChild(spanAliado);
 
 
-    (function() {
-        var formularioAliados = document.getElementsByName("test")[0];
-        var elementosAliado = formTest.elements;
-        var btn = document.getElementById("btnAgregar");
+});
 
 
-        function validarNombreAliado(e){
-            if(formTest.username.value == 0){
-                alert("Debes completar el campo Nombre, antes de enviar tus datos a Pepe.");
-                e.preventDefault();
-            } else {
-                var nomabreAliado = document.formTest.elementosAliado[1].value;
-                document.write(nomabreAliado);
-            }
-        }
-
-        var validarAliado(e) = function(e){
-            validarNombreAliado(e);
-        };
-
-        formTest.addEventListener("submit", validarAliado);
-
-    })
+    
     
     
     // Requerimiento 2: Formulario de contacto, aquí se valida

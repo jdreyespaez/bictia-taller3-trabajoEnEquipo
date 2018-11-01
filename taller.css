@@ -196,12 +196,16 @@ input:checked ~ .contenido-menu {
 
 /* 5.3. El estilo que se le aplicará a la sección que contendrá al nuevo aliado */
 section {
-    width: 150px;
-    height: 300px;
+    width: 100%;
+    /* height: 300px; */
     background: #dddddd;
     display: block;
     float: left;
     margin-right: 10px;
     margin-top: 10px;
     border: 1px solid #aaaaaa;
+}
+
+span {
+    text-align: center;
 }
