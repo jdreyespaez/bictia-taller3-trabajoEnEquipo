@@ -57,8 +57,7 @@
         </div>
     </div>
 
-    <!-- Requerimiento 1: Imágenes con efecto 3D -->
-    <!-- 1.1. Se crearán unas tarjetas que contendrán las imágenes de la galería -->
+     <!-- 1.1. Se crearán unas tarjetas que contendrán las imágenes de la galería -->
     <div class="tarjeta">
         <!-- 1.2. La tarjeta tendrá un frente y un reverso que mostrará el efecto 3D -->
         <div class="frente"><img src="foto_bogota_ppal.jpg" alt="image"></div>
@@ -71,16 +70,12 @@
             </div>
         </div>
     </div>
+
+    <!-- Requerimiento 1: Imágenes con efecto 3D -->
+   
     
-
-    <div class="div3">
-        <h2>lo que tu puedes hacer</h2>
-        <img src="img/bogota-museo-botero-escaleras-patio-y-corredores-640x400.jpg" alt="image">
-        <img src="img/bogota-panoramica.jpg" alt="image">
-        <img src="img/bogota.png" alt="image">
-    </div>
-
     <!-- Requerimiento 2: Formulario de contacto -->
+    <h1>Contáctate con nosotros</h1>
     <div class="contacto">
         <form name="formulario" method="GET">
             <!-- 2.2. Se incluyen los campos a enviar, con sus respectivas funciones de validación-->
@@ -109,33 +104,48 @@
         <h1>¿Quieres ser un aliado empresarial?</h1>
         <p>Llena la información del siguiente formulario:</p> 
         
-        <!-- 5.4. Se crea el formulario que ubicará los datos en la nueva sección -->
-        <form name="formularioAliados" method="GET">
+        <form id="formularioAliados" method="GET">
             <!-- 5.1. Se crean los inputs a agregar -->
             <input type="text" name="nombreEmpresa" id="nombreEmpresa" placeholder="Nombre de tu Empresa"/>
             <br><br>
 
-            <input type="submit" name="botonAgregar" id="botonAgregar" value="Agregar nuevo Aliado"/>
-
+            <button>Agregar Aliado</button>
         </form>
-        <!-- 5.2. Se crea el espacio donde se incluirán los aliados -->
-        <section id="contenedor">
-            <div id="aliados"></div>
-        </section>
+        
     </div>
 
-        <!-- <form name="test">
-            Usuario: <input type="text" name="username"/>
-            Clave: <input type="password" name="password"/>
-            <input type="submit" value="Enviar" name="" id="">
-        </form> -->
+        
 
     <script>
     
-    // var formTest = document.getElementsByName("test");
-    //    var x = formTest.elements[0].name;
-    //    console.log(x);
-    //    document.write(x);
+    // Requerimiento 5: Agregar aliados
+
+    // 
+
+    (function() {
+        var formularioAliados = document.getElementsByName("test")[0];
+        var elementosAliado = formTest.elements;
+        var btn = document.getElementById("btnAgregar");
+
+
+        function validarNombreAliado(e){
+            if(formTest.username.value == 0){
+                alert("Debes completar el campo Nombre, antes de enviar tus datos a Pepe.");
+                e.preventDefault();
+            } else {
+                var nomabreAliado = document.formTest.elementosAliado[1].value;
+                document.write(nomabreAliado);
+            }
+        }
+
+        var validarAliado(e) = function(e){
+            validarNombreAliado(e);
+        };
+
+        formTest.addEventListener("submit", validarAliado);
+
+    })
+    
     
     // Requerimiento 2: Formulario de contacto, aquí se valida
     (function(){
@@ -193,44 +203,6 @@
         formulario.addEventListener("submit", validar);
 
     }())
-
-    // Requerimiento 5: Agregar aliados
-
-    // 5.5. La función auto-invocada será la que valide lo que venga del formularioAliados e incluya la información en el nuevo div
-   
-        var formulario = document.getElementsByName("formularioAliados")[0];
-        var elementos = formulario.elements;
-        var boton = document.getElementById("botonAgregar");
-
-        function validarNombreEmpresa(e){
-            if(formulario.nombreEmpresa.value == 0){
-                alert("No puedes agregar un nuevo aliado sin decir el nombre de la empresa.");
-                e.preventDefault();
-            } else {
-                // 5.2. Se crea el espacio donde se incluirán los aliados y la función en JS que los agregará
-                // Creo un nuevo div
-                var nuevoDiv = document.createElement("div");
-                // Buscamos el padre de los elementos por medio del ID, en este caso
-                var padre = document.getElementById("contenedor");
-                // Creamos una variable de referencia para poder insertar nuestro nuevo elemento
-                var ref = document.getElementById("aliados");
-                // Agregamos el elemento en la posición que deseamos de acuerdo a nuestra variable ref
-                padre.insertBefore(nuevoDiv, ref);
-
-                var elementoTexto = document.createElement("p");
-                // Ahora crearé el nodo con texto
-                var contenidoTextual = document.createTextNode("hola");
-                // Agrego el elemento al nodo
-                elementoTexto.appendChild(padre);
-                // Meto el elementoTexto al div que deseo
-            }
-        }
-
-        var validar = function(e){
-            validarNombreEmpresa(e);
-        };
-
-        formulario.addEventListener("submit", validar);
 
 
     </script>

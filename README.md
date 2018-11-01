@@ -40,6 +40,3 @@ Lo primero que se hará es mejorar el diseño web, empezando por el home.
 ## Requerimiento 5: Sección para agregar Aliados
 En esta sección se crearán nuevos divs donde están insertados los datos de las empresas que quieres ser aliadas de la fundación. Así fue el proceso:
 1. Se crean los inputs a agregar como aliado.
-2. Se crea el espacio donde se incluirán los aliados y la función en JS que los agregará.
-3. El estilo que se le aplicará a la sección que contendrá al nuevo aliado.
-4. Se crea el formulario que ubicará los datos en sección de Aliados.
