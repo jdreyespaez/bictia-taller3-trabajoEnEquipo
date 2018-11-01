@@ -98,6 +98,45 @@ html, body {
     margin-top: 33%;
 }
 
+.formularios {
+    max-width: 700px;
+    margin: 2rem auto;
+    border: 2px solid #E74C3C;
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.formularios input {
+    display: block;
+    width: 100%;
+}
+
+#boton {
+    border: 0;
+    background: #343050;
+    padding: 5px;
+    color: #fff;
+    margin: 1rem 0;
+    width: auto;
+    text-transform: uppercase;
+}
+
+.contacto h1 {
+    font-family: 'Muli';
+    text-align: center;
+}
+
+
+.aliados h1 {
+    font-family: 'Muli';
+    text-align: center;
+}
+
+#contenedorAliados h2 {
+    font-family: 'Muli';
+    text-align: center;
+}
+
 /* 1.1. Se crearán unas tarjetas que contendrán las imágenes de la galería */
 .tarjeta {
     position: relative;

@@ -75,9 +75,9 @@
    
     
     <!-- Requerimiento 2: Formulario de contacto -->
-    <h1>Contáctate con nosotros</h1>
     <div class="contacto">
-        <form name="formulario" method="GET">
+        <h1>Contáctate con nosotros</h1>
+        <form class="formularios" name="formulario" method="GET">
             <!-- 2.2. Se incluyen los campos a enviar, con sus respectivas funciones de validación-->
             <input type="text" name="nombre" id="nombre" placeholder="Nombre"/>
             <br><br>
@@ -102,20 +102,22 @@
     <!-- Requerimiento 5: Agregar aliados -->
     <div class="aliados">
         <h1>¿Quieres ser un aliado empresarial?</h1>
-        <p>Llena la información del siguiente formulario:</p> 
         
-        <form id="formularioAliados" method="GET">
+        
+        <form class="formularios" id="formularioAliados" method="GET">
+            <p>Llena la información del siguiente formulario:</p> 
             <!-- 5.1. Se crean los inputs a agregar -->
             <input type="text" name="nombreEmpresa" placeholder="Nombre de tu Empresa"/>
             <br><br>
 
-            <button>Agregar Aliado</button>
+            <button id="boton">Agregar Aliado</button>
+            <section id="contenedorAliados">
+                    <h2>Nuestros Aliados</h2>
+                    <span></span>
+                </section>
         </form>
         
-        <section id="contenedorAliados">
-            <h2>Nuestros Aliados</h2>
-            <span></span>
-        </section>
+        
 
     </div>
 
