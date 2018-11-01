@@ -57,10 +57,9 @@ html, body {
 .header-qs h2 {
     font-family: 'Muli';
     text-align: center;
-    color: #9791dd;
+    color: #fff;
     margin-top: 33%;
     margin-bottom: 70%;
-    background-color: #fff;
     border-radius: 10px;
 }
 
@@ -130,6 +129,10 @@ html, body {
 .aliados h1 {
     font-family: 'Muli';
     text-align: center;
+}
+
+#contenedorAliados {
+    margin-bottom: 50px;
 }
 
 #contenedorAliados h2 {
@@ -247,4 +250,7 @@ section {
 
 span {
     text-align: center;
+    font-family: 'Saira Extra Condensed';    
+    font-style: italic;
+    text-transform: uppercase;
 }
