@@ -106,7 +106,7 @@
         
         <form id="formularioAliados" method="GET">
             <!-- 5.1. Se crean los inputs a agregar -->
-            <input type="text" name="nombreEmpresa" id="nombreEmpresa" placeholder="Nombre de tu Empresa"/>
+            <input type="text" name="nombreEmpresa" placeholder="Nombre de tu Empresa"/>
             <br><br>
 
             <button>Agregar Aliado</button>
@@ -119,8 +119,9 @@
     <script>
     
     // Requerimiento 5: Agregar aliados
+    // 5.2. Seleccionar el formulario por su id="formularioAliados"
+    var agregarAliado = document.forms["formularioAliados"];
 
-    // 
 
     (function() {
         var formularioAliados = document.getElementsByName("test")[0];
